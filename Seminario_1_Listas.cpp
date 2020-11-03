@@ -1,6 +1,6 @@
 //1er Seminario Estructura de Datos
 // Ordenar listas, Equipo II
-
+// OJO Estoy trabajandolo por parte y lo estare publicando segun voy probandolo, Muchas gracias Compañeros
 #include <iostream>
 
 using namespace std;
