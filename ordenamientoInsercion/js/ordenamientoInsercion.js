@@ -20,7 +20,7 @@ function agregar() {
         numero.push( numeroOrdenar );
     }
     console.log( numero );
-    
+
 }
 // Llamada de la funcion
 ordenar();
