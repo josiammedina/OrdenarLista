@@ -1,3 +1,4 @@
+// Ordenamiento de insercion
 let cantidadNumero, numeroOrdenar, numeroMin;
 const numero = [];
 // Llamada de la funcion
@@ -31,7 +32,6 @@ function ordenar() {
 
     // Recorrido del arrya
     for ( let i = 1; i < numero.length; i++ ) {
-        numeroMin = i;
         // Comparacion del array
         for ( let j = i; j > 0; j-- ) {
             
@@ -40,7 +40,6 @@ function ordenar() {
                 numeroTemp = numero[ j ];
                 numero[ j ] = numero[ j - 1 ] ;
                 numero[ j - 1 ] = numeroTemp;
-
                 
             }    
         }
