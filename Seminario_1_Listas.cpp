@@ -10,8 +10,7 @@ using namespace std;
 
 struct nodo {
 	int dato;				//En dicha variable guardaremos los contenidos de los nodos
-	struct nodo *siguiente;			//Este es el puntero Siguiente
-				
+	struct nodo *siguiente;			//Este es el puntero Siguiente				
 };
 
 main(){
@@ -34,9 +33,8 @@ main(){
 		i++;
 	}		
 	cout<<"Listado de Datos: ";				//Imprimimos por pantalla titulo Listado de Datos
-	while(actual!=NULL){					//El apuntador nodo ira siguiente los nodos ya que para hasta encontrar NULL
-	cout << actual->num << ", ";
-	//cout<<"/nDATO:"<<actual->num;
+	while(actual!=NULL){					//El apuntador nodo ira al siguiente hasta encontrar NULL y detenerse
+	cout << actual->num << ", ";	
 	actual=actual->siguiente;
 	}
 	
