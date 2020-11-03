@@ -24,4 +24,22 @@ main(){
 	cout <<"Digitar cantidad de nodos: ";	//Imprimir por pantalla pedido de digitar cantidad de nodos
 	cin>>cant;
 	
+	while(i<=cant){
+		actual=(struct nodo*)malloc(sizeof(struct nodo));
+		actual->siguiente=primero;			//
+		cout<<"Digitar datos: ";			//Imprimir por pantalla pedido de digitar datos
+		cin>>dato;					//
+		actual->num=dato;				//
+		primero=actual;					//
+		i++;
+	}		
+	cout<<"Listado de Datos: ";				//Imprimimos por pantalla titulo Listado de Datos
+	while(actual!=NULL){					//El apuntador nodo ira siguiente los nodos ya que para hasta encontrar NULL
+	cout << actual->num << ", ";
+	//cout<<"/nDATO:"<<actual->num;
+	actual=actual->siguiente;
+	}
+	
+	system("pause>>NULL");	
+	
 };
